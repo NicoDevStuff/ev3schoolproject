@@ -6,5 +6,5 @@ from ev3dev2.sensor.lego import TouchSensor
 from ev3dev2.led import Leds
 from ev3dev2.sound import Sound
 
-sound = Sound()
-sound.speak('Nogger ice cream haha o;jjhf;oweiohfiuweh;ofijw;lkjen;/wjihf;owhef;ouihwe;flkjndfkjhskl;djcn,.msnbfvkjhvlojknel;rkkgh;lerljihgejrhngkejrhgkejrhgkm')
+
+leds.set_color("LEFT", "RED")
