@@ -1,0 +1,4 @@
+28.3.23:
+	* Erst haben wir pygame auf dem Lego-Roboter installiert, um 
+		Grafiken anzeigen zu können
+	* Dann haben wir an dem programm gearbeitet, welches die Motoren ansteuert
