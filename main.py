@@ -8,4 +8,7 @@ from ev3dev2.sound import Sound
 
 
 m = LargeMotor(OUTPUT_A)
-m.on_for_rotations(SpeedPercent(100), 1)
+
+while True:
+    m.on_for_rotations(SpeedPercent(100), 1)
+    m.on_for_rotations(SpeedPercent(100), -1)
