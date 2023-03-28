@@ -5,15 +5,16 @@ from ev3dev2.sensor import INPUT_1
 from ev3dev2.sensor.lego import TouchSensor
 from ev3dev2.led import Leds
 from ev3dev2.sound import Sound
-from ev3dev2.display import FbMem
+import pygame
 
-screen = FbMem()
-
+pygame.init()
+screen = pygame.display.set_mode((0, 0 ), pygame.FULLSCREEN)
 m = LargeMotor(OUTPUT_A)
 
-
-screen.draw.rectangle((10,10,60,20), fill='black')
-
 while True:
+    screen.fill((0, 0, 0))
+
     m.on_for_rotations(SpeedPercent(100), 1)
     m.on_for_rotations(SpeedPercent(100), -1)
+
+    pygame.display.update()
