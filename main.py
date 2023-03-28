@@ -7,6 +7,5 @@ from ev3dev2.led import Leds
 from ev3dev2.sound import Sound
 
 
-leds = Leds()
-
-leds.set_color("LEFT", "RED")
+m = LargeMotor(OUTPUT_A)
+m.on_for_rotations(SpeedPercent(100), 1)
